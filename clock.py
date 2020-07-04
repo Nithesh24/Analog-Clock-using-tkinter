@@ -4,17 +4,17 @@ from math import sin,cos,radians
 
 clock  = tk.Tk()
 clock.title("clock")
-icon = tk.PhotoImage(file = r"C:\Users\nithesh\AppData\Local\Programs\Python\Python37\images\alarm-clock.png")
+icon = tk.PhotoImage(file = "alarm-clock.png")
 clock.iconphoto(False, icon)
 
 canvas = tk.Canvas(clock,width = 450 , height = 450)
 canvas.pack()
 
-bg = tk.PhotoImage(file = r"C:\Users\nithesh\AppData\Local\Programs\Python\Python37\images\woodbg.png")
+bg = tk.PhotoImage(file = "woodbg.png")
 background = canvas.create_image(225, 225, image = bg)
 
 
-image = tk.PhotoImage(file = r"C:\Users\nithesh\AppData\Local\Programs\Python\Python37\images\clock_image.png")
+image = tk.PhotoImage(file = "clock_image.png")
 clock_image = canvas.create_image(225, 225, image = image)
 
 center = 225
